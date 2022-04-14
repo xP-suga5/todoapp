@@ -1,0 +1,145 @@
+/*common*/
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
+    "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+  line-height: 1.7;
+  background-color: #2d197c;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  margin: 0 10%;
+}
+
+
+/*index*/
+.container {
+  height: auto;
+  min-height: 300px;
+  width: 60%;
+  padding: 1em 2em;
+  margin: 2em auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: bold;
+  color: #000;
+
+  border-radius: 10px;
+  background-color: #fff;
+
+}
+
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px 15px;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text_content {
+  height: 20px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+
+/*create*/
+.content-create{
+  padding: 20px 20px;
+}
+
+.content-create__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+
+.content-create__text {
+  width: 80%;
+}
+
+
+.content-create__btn {
+  color: #dc70fa;
+  border: 2px solid #dc70fa;
+  margin: 0 0 0 auto;
+}
+
+.content-create__btn:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #dc70fa;
+  ;
+}
+
+/*table*/
+table{
+  width: 90%;
+  text-align: center;
+}
+
+table th,
+table td {
+  padding: 10px 0;
+  border: none;
+}
+
+
+/*update*/
+.content-update__text {
+  width: 100%;
+}
+
+.content-update__btn {
+  color: #fa9770;
+  border: 2px solid #fa9770;
+  margin: 0 0 0 auto;
+}
+
+.content-update__btn:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #fa9770;
+  ;
+}
+
+/*delete*/
+
+.content-delete__btn {
+  color: #71fadc;
+  border: 2px solid #71fadc;
+  margin: 0 0 0 auto;
+}
+
+.content-delete__btn:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #71fadc;
+}

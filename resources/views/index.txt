@@ -1,0 +1,7 @@
+    <!--<td>
+      <input type="text" value="{{$todo->content}}" name="content">
+    </td>
+
+    <td>
+      <a href="{{ route('todo.update', ['id'=>$todo->id]) }}" class="btn">更新</a>
+    </td>-->
