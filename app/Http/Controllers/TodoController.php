@@ -15,16 +15,7 @@ class TodoController extends Controller
 
     public function create(Request $request)
     {
-        //$this->validate($request, Todo::$rules);
-        $request->validate(
-            [
-                'content' => 'required||max:20',
-            ],
-            [
-                'content.required' => 'コンテンツ入力してください。',
-                'content.max' => '最大文字数は20文字です。',
-            ]
-        );
+        $this->validate($request, Todo::$rules);
 
         $form = $request->all();
         unset($form['_token_']);
@@ -34,16 +25,8 @@ class TodoController extends Controller
 
     public function update(Request $request, $id)
     {
-        //$this->validate($request, Todo::$rules);
-        $request->validate(
-            [
-                'content' => 'required||max:20',
-            ],
-            [
-                'content.required' => 'コンテンツ入力してください。',
-                'content.max' => '最大文字数は20文字です。',
-            ]
-        );
+        $this->validate($request, Todo::$rules);
+
         $todo = Todo::find($id);
         $todo->content = $request->content;
         $todo->save();

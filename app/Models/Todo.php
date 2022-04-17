@@ -14,12 +14,7 @@ class Todo extends Model
     ];
 
     public static $rules = array(
-        [
-            'content' => 'required||max:20',
-        ],
-        [
-            'content.required' => 'コンテンツ入力してください。',
-            'content.max' => '最大文字数は20文字です。',
-        ]
+        'content' => 'required|max:20',
     );
+    
 }
